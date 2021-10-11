@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name_TextView"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text=" 用户名："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/password_TextView"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="密码："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+    <TextView
+        android:id="@+id/height_TextView"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="身高："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <TextView
+        android:id="@+id/weight_TextView"
+        android:layout_width="83dp"
+        android:layout_height="46dp"
+        android:gravity="center"
+        android:text="体重："
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/name_EditText"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toEndOf="@+id/name_TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/pwd_EditText"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:password="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/password_TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099"
+        tools:ignore="Deprecated" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/weight_EditText"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:hint="kg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/height_TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/height_EditText"
+        android:layout_width="228dp"
+        android:layout_height="46dp"
+        android:hint="m"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/weight_TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <RadioGroup
+        android:id="@+id/sex_RadioGroup"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345">
+
+        <RadioButton
+            android:id="@+id/sex_boy_RadioButton"
+            android:layout_width="59dp"
+            android:layout_height="47dp"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/sex_girl_RadioButton"
+            android:layout_width="59dp"
+            android:layout_height="47dp"
+            android:text="女" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/compute_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:text="计算"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <Button
+        android:id="@+id/reset_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:background="#808080"
+        android:text="重置"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toEndOf="@+id/compute_Button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.439" />
+
+    <Button
+        android:id="@+id/nextPage_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925" />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="187dp"
+        android:layout_height="42dp"
+        android:text="点击选择城市"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
